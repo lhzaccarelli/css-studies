@@ -1,20 +1,61 @@
-.container-1{
+@media(min-width: 768px) {
+    .container-1 {
+        display: flex;
+        align-items: stretch; /* default */
+        /* align-items: flex-start;
+        align-items: flex-center;
+        align-items: flex-end; */
     
+        /* flex-direction: column;
+        flex-direction: row; */
+    
+    
+    }
+    
+    .container-2 {
+        display: flex;
+        /* justify-content: flex-start; /* default */
+        /* justify-content: flex-end;
+        justify-content: center;
+        */
+    
+        justify-content: space-between;
+        
+    }
 }
+
+.container-3 {
+    display: flex;
+    flex-wrap: wrap; /* Ele pode quebrar linhas */
+    justify-content: space-between;
+}
+
     
-.container-1 div {
+.container-1 div, .container-2 div, .container-3 div {
     border: 1px #ccc solid;
     padding: 10px
 }
   
-.box-1{
-
+.box-1 {
+    flex:2;
+    order: 2;
 }
 
-.box-2{
-
+.box-2 {
+    flex:1;
+    order: 1;
 }
 
-.box-3{
+.box-3 {
+    flex:1;
+    order: 3;
+}
 
+.container-2-box {
+    /* width: 20%; */
+    flex-basis: 20%;
+}
+
+.container-3-box {
+    flex-basis: 12%;
 }
